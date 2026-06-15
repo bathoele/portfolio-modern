@@ -1,9 +1,10 @@
 import React from "react"
-import HomePage from "./HomePage"
+import PageDisplay from "./PageDisplay"
 
 function App() {
   return (
-    <HomePage />
+    
+    <PageDisplay />
   )
 }
 
