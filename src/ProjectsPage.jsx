@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ProjectsPage() {
+function ProjectsPage() {
   return (
     <div>
       <h1>Projects</h1>
@@ -15,3 +15,5 @@ export default function ProjectsPage() {
     </div>
   )
 }
+
+export default ProjectsPage;

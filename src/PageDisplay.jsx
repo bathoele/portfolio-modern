@@ -4,7 +4,7 @@ import ProjectsPage from "./ProjectsPage"
 import AboutPage from "./AboutPage"
 import ContactCard from "./ContactCard"
 
-export default function PageDisplay({ page, setPage }) {
+function PageDisplay({ page, setPage }) {
 
   return (
     <div>
@@ -14,3 +14,5 @@ export default function PageDisplay({ page, setPage }) {
     </div>
   )
 }
+
+export default PageDisplay;
