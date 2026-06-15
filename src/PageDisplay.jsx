@@ -4,8 +4,13 @@ import ProjectsPage from "./ProjectsPage"
 import AboutPage from "./AboutPage"
 import ContactCard from "./ContactCard"
 
-export default function PageDisplay() {
+export default function PageDisplay({ page }) {
+
   return (
-    <HomePage />
+    <div>
+      {page === "home" && <HomePage />}
+      {page === "projects" && <ProjectsPage />}
+      {page === "about" && <AboutPage />}
+    </div>
   )
 }
