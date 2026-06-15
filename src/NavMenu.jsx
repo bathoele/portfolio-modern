@@ -3,11 +3,11 @@ import React, { useState } from "react";
 function NavMenu({ changePage, currentPage }) {
 
   return (
-    <div className="h-70 flex flex-col justify-center">
-      <ul>
-        <li><span></span><button className={currentPage === "home" ? "text-red-500" : ""} onClick={() => changePage("home")}>HOME</button></li>
-        <li><span></span><button className={currentPage === "projects" ? "text-red-500" : ""} onClick={() => changePage("projects")}>PROJECTS</button></li>
-        <li><span></span><button className={currentPage === "about" ? "text-red-500" : ""} onClick={() => changePage("about")}>ABOUT</button></li>
+    <div className="h-70 flex flex-col justify-center z-5">
+      <ul className="leading-relaxed">
+        <li><span></span><button className={currentPage === "home" ? "" : ""} onClick={() => changePage("home")}>HOME</button></li>
+        <li><span></span><button className={currentPage === "projects" ? "" : ""} onClick={() => changePage("projects")}>PROJECTS</button></li>
+        <li><span></span><button className={currentPage === "about" ? "" : ""} onClick={() => changePage("about")}>ABOUT</button></li>
       </ul>
     </div>
   )

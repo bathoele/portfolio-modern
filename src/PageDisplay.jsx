@@ -7,7 +7,7 @@ import ContactCard from "./ContactCard"
 function PageDisplay({ page, setPage }) {
 
   return (
-    <div className="w-1/2 max-w-200">
+    <div className="w-1/2 max-w-200 z-5">
       {page === "home" && <HomePage setPage={setPage} />}
       {page === "projects" && <ProjectsPage />}
       {page === "about" && <AboutPage />}
