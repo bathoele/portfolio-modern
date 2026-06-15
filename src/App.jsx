@@ -7,7 +7,7 @@ function App() {
   const [currentPage, setPage] = useState("home");
 
   return (
-    <div className="flex flex-row p-15 pt-20 justify-between">
+    <div className="flex flex-row p-15 pt-12 justify-around">
       <NavMenu changePage={setPage} currentPage={currentPage} />
       <PageDisplay page={currentPage} setPage={setPage} />
       <ContactCard />
