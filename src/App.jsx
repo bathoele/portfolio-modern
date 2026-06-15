@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <NavMenu changePage={setPage} />
-      <PageDisplay page={currentPage} />
+      <PageDisplay page={currentPage} setPage={setPage} />
     </div>
   )
 }
