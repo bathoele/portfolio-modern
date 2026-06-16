@@ -11,7 +11,7 @@ export default function GrainBackground() {
           backgroundSize: '200px 200px',
         }}
       />
-      <div className="pointer-events-none fixed inset-0 -top-75 -left-100 w-600 h-375 mx-auto z-1 blur-3xl transition-color animate-pulse [animation-duration:7s]"
+      <div className="pointer-events-none fixed left-1/2 -translate-x-1/2 -top-75 w-600 h-375 z-1 blur-3xl transition-color animate-pulse [animation-duration:7s]"
         style={{ background: 'radial-gradient(ellipse at top, rgba(255, 145, 0, 0.29) 5%, transparent 45% )' }}
       />
       <div className="pointer-events-none fixed inset-0 -top-75 w-1/1 h-375 mx-auto z-1 blur-3xl"

@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="bg-gray-800">
       <GrainBackground />
-      <div className="flex flex-row p-15 pt-20 justify-center gap-30 text-gray-300 border-2 max-w-[90%] mx-auto">
+      <div className="flex flex-row p-15 pt-20 justify-center gap-30 text-gray-300 max-w-[90%] mx-auto">
         <NavMenu changePage={setPage} currentPage={currentPage} />
         <PageDisplay page={currentPage} setPage={setPage} />
         <ContactCard />
