@@ -8,11 +8,13 @@ function App() {
   const [currentPage, setPage] = useState("home");
 
   return (
-    <div className="flex flex-row p-15 pt-12 justify-around bg-gray-800 text-gray-300 h-screen">
+    <div className="bg-gray-800 h-screen">
       <GrainBackground />
-      <NavMenu changePage={setPage} currentPage={currentPage} />
-      <PageDisplay page={currentPage} setPage={setPage} />
-      <ContactCard />
+      <div className="flex flex-row p-15 pt-20 justify-around text-gray-300">
+        <NavMenu changePage={setPage} currentPage={currentPage} />
+        <PageDisplay page={currentPage} setPage={setPage} />
+        <ContactCard />
+      </div>
     </div>
   )
 }
