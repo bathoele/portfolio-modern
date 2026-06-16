@@ -4,11 +4,17 @@ function NavMenu({ changePage, currentPage }) {
 
   return (
   
-    <nav className="h-70 relative -left-25 justify-center z-5 text-lg font-head">
-      <ul className="leading-relaxed fixed flex flex-col h-70 justify-center">
-        <li className={`${currentPage === "home" ? "[transform:perspective(500px)_rotateY(50deg)] -left-4 tracking-widest" : "left-0"} relative  mb-2 transition-all duration-300 ease-in-out`}><button className="w-full text-start" onClick={() => changePage("home")}>HOME</button></li>
-        <li className={`${currentPage === "projects" ? "[transform:perspective(500px)_rotateY(50deg)] -left-4 tracking-widest" : "left-0"} relative mb-2 transition-all duration-300 ease-in-out`}><button  className="w-full text-start" onClick={() => changePage("projects")}>PROJECTS</button></li>
-        <li className={`${currentPage === "about" ? "[transform:perspective(500px)_rotateY(50deg)] -left-4 tracking-widest" : "left-0"} relative  mb-2 transition-all duration-300 ease-in-out`}><button className="w-full text-start" onClick={() => changePage("about")}>ABOUT</button></li>
+    <nav className="relative -left-35 justify-center z-5 text-lg text-gray-400 font-head">
+      <ul className="leading-relaxed fixed flex flex-col h-100 w-30 justify-center [transform:perspective(200px)_rotateY(40deg)]">
+        <li className={`${currentPage === "home" ? "text-white" : "border-transparent"} border-l-2 tracking-widest relative  mb-2 transition-all duration-300 ease-in-out h-8`}>
+          <button className="w-full text-start pl-2" onClick={() => changePage("home")}>HOME</button>
+        </li>
+        <li className={`${currentPage === "projects" ? "text-white" : "border-transparent"} border-l-2 tracking-widest relative mb-2 transition-all duration-300 ease-in-out h-8`}>
+          <button  className="w-full text-start pl-2" onClick={() => changePage("projects")}>PROJECTS</button>
+        </li>
+        <li className={`${currentPage === "about" ? "text-white" : "border-transparent"} border-l-2 tracking-widest relative mb-2 transition-all duration-300 ease-in-out h-8`}>
+          <button className="w-full text-start pl-2" onClick={() => changePage("about")}>ABOUT</button>
+        </li>
       </ul>
     </nav>
     
