@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Nunito", system-ui;
+  --font-head: "Nunito Sans", system-ui;
 
   --animate-color-pulse: colorPulse 7s ease-in-out infinite;
   --animate-border-pulse: borderPulse 7s ease-in-out infinite;
@@ -23,22 +24,22 @@
   @keyframes borderLeft {
     0%, 100% { border-color: var(--color-gray-300);
                 box-shadow:  0 0 10px rgba(255, 145, 0, 0.35),
-                              -4px 8px 5px rgba(0, 0, 0, .5);
+                              -3px 8px 5px rgba(0, 0, 0, .5);
     }
     55%, 65%       { border-color: var(--color-gray-400);
                 box-shadow:  0 0 10px rgba(255, 145, 0, 0.05),
-                              -4px 8px 5px rgba(0, 0, 0, .15);
+                              -3px 8px 5px rgba(0, 0, 0, .15);
     }
   }
 
   @keyframes borderRight {
     0%, 100% { border-color: var(--color-gray-300);
                 box-shadow:  0 0 10px rgba(255, 145, 0, 0.35),
-                              4px 8px 5px rgba(0, 0, 0, .5);
+                              3px 8px 5px rgba(0, 0, 0, .5);
     }
     55%, 65%       { border-color: var(--color-gray-400);
                 box-shadow:  0 0 10px rgba(255, 145, 0, 0.05),
-                              4px 8px 5px rgba(0, 0, 0, .15);
+                              3px 8px 5px rgba(0, 0, 0, .15);
     }
   }
 
