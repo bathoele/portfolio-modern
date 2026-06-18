@@ -11,22 +11,22 @@ function ProjectsPage() {
       tools: ["React", "Express", "Tailwind", "Open-Meteo API"]
     },
     {
-      image: "weather.png",
+      image: "KCDR.png",
       title: "Kansas City Doberman Rescue Remake",
       desc: "Final project for a CSS Techniques class that included a complete redesign of a local organization's website.",
       tools: []
     },
     {
-      image: "weather.png",
+      image: "decoder.png",
       title: "Exploder Decoder",
       desc: "Bomb defusing game made with pure HTML, CSS, Javascript, and personal amusement. Can you prove yourself to be the ultimate Decoderator?",
       tools: []
     },
     {
-      image: "weather.png",
+      image: "NEKL.png",
       title: "Northeast Kansas Library Mockup",
       desc: "Redesign of the NEKL Foundation's website for a digital media concepts class presentation.",
-      tools: []
+      tools: ["Figma"]
     },
   ];
 
