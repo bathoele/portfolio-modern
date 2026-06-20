@@ -13,7 +13,7 @@ export default function ProjectCard({ data }) {
       </div>
       <div className="col-span-8">
         <span>
-          <p className="leading-6.5"><a href={data.links[0]} className="text-xl underline underline-offset-4 hover:decoration-orange-200 hover:text-white">{data.title}</a>&ensp;{data.desc}</p>
+          <p className="leading-6.5"><a href={data.links[0]} target="_blank" className="text-xl underline underline-offset-4 hover:decoration-orange-200 hover:text-white">{data.title}</a>&ensp;{data.desc}</p>
         </span>
         {data.tools.length > 0 &&
           <div className="mt-2 flex gap-3 text-sm items-center">
@@ -22,7 +22,6 @@ export default function ProjectCard({ data }) {
             })}
           </div>
         }
-
       </div>
     </div>
   )
