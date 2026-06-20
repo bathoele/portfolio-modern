@@ -6,7 +6,6 @@ function useActiveSection(sectionIds, options = {}) {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        // Find the entry that's most visible right now
         const visible = entries
           .filter(entry => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
@@ -16,7 +15,7 @@ function useActiveSection(sectionIds, options = {}) {
         }
       },
       {
-        rootMargin: '-20% 0px -70% 0px', // "trigger zone" near top of viewport
+        rootMargin: '-20% 0px -70% 0px',
         threshold: 0,
         ...options,
       }

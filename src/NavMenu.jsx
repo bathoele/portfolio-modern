@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useActiveSection from "./useActiveSection";
 
-function NavMenu({ changePage, currentPage }) {
+function NavMenu() {
   const items = [
     { id: 'home', label: 'HOME' },
     { id: 'projects', label: 'PROJECTS' },
@@ -11,10 +11,13 @@ function NavMenu({ changePage, currentPage }) {
   const activeId = useActiveSection(items.map(i => i.id));
 
   const scrollToSection = (id) => {
-    document.getElementById(id)?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const offset = 89;
+    const top = el.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({ top, behavior: 'smooth' });
   }
 
   return (
