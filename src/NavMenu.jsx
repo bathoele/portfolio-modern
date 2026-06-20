@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import useActiveSection from "./useActiveSection";
 
 function NavMenu({ changePage, currentPage }) {
-  const [section, setSection] = useState("home");
-
   const items = [
     { id: 'home', label: 'HOME' },
     { id: 'projects', label: 'PROJECTS' },
@@ -25,13 +23,13 @@ function NavMenu({ changePage, currentPage }) {
       <div className="fixed flex h-100 items-center">
         <div className="w-22 [transform:perspective(200px)_rotateY(300deg)] relative left-5">
           {items.map(item => (
-            <div className={`${section === item.id ? "border-orange-100" : "border-transparent"} border-1 h-8 w-4 mb-2 ml-auto transition-all duration-300 ease-in-out`}></div>
+            <div className={`${activeId === item.id ? "border-orange-100" : "border-transparent"} border-1 h-8 w-4 mb-2 ml-auto transition-all duration-300 ease-in-out`}></div>
           ))}
         </div>
         <ul className="leading-relaxed flex flex-col w-30 justify-center [transform:perspective(200px)_rotateY(40deg)]">
           {items.map(item => (
-            <li className={`${section === item.id ? "text-orange-100" : "hover:text-gray-200"} tracking-widest relative  mb-2 transition-all duration-300 ease-in-out h-8`}>
-              <button className="w-full text-start pl-2" onClick={() => {scrollToSection(item.id); setSection(item.id)}}>{item.label}</button>
+            <li className={`${activeId === item.id ? "text-orange-100" : "hover:text-gray-200"} ${activeId === item.id ? 'active' : ''} tracking-widest relative  mb-2 transition-all duration-300 ease-in-out h-8`}>
+              <button className="w-full text-start pl-2" onClick={() => scrollToSection(item.id)}>{item.label}</button>
             </li>
           ))}
         </ul>
