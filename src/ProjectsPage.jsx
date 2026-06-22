@@ -14,7 +14,7 @@ function ProjectsPage() {
     {
       image: "KCDR.png",
       title: "Kansas City Doberman Rescue Remake",
-      desc: "Final project for a CSS Techniques class that included a complete redesign of a local organization's website.",
+      desc: "Final project for a CSS Techniques class that included a complete redesign of a local organization's website. Designed with a mobile-first approach, the layout is responsive to mobile, tablet, and desktop screen sizes.",
       tools: [],
       links: ["https://bathoele.github.io/KCDR-site/web122-final-bat/"],
     },
