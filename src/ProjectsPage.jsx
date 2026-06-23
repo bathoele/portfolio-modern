@@ -39,6 +39,20 @@ function ProjectsPage() {
       tools: ["Figma"],
       links: ["https://www.figma.com/design/NshJhkBUlDTNCt2kTDyvOQ/WEB126-Mockup-Project?node-id=0-1&t=ok3pU5gcSbdnlRLT-1"],
     },
+    {
+      image: "NOTLD.png",
+      title: "Night of the Living Dead Mockup",
+      desc: "Movie website design for the classic zombie horror.",
+      tools: ["Figma"],
+      links: ["https://www.figma.com/design/VPFOYDZ9plnN2BsNnoalVk/Movie-Mockup-Project?node-id=0-1&t=3r9snpqARw1GmyOJ-1"],
+    },
+    {
+      image: "nerman.png",
+      title: "Nerman Museum Info Tablet Mockup",
+      desc: "Design to display museum and exhibit information on a tablet as a User Interface Design class.",
+      tools: ["Figma"],
+      links: ["https://www.figma.com/design/sM5kbgsVwdD7KAeJjHejRv/Museum-Interface-Design-Project?node-id=3-3&t=3r9snpqARw1GmyOJ-1"],
+    },
   ];
 
   return (
